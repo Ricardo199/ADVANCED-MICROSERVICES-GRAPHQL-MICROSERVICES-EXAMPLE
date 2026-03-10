@@ -1,8 +1,10 @@
 {
   "name": "product-service",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "product-microservice.js",
   "scripts": {
+    "dev": "nodemon product-microservice.js",
+    "start": "node product-microservice.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -10,10 +12,20 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "apollo-server": "^4.0.0",
-    "dotenv": "^17.3.1",
-    "graphql": "^16.13.1",
-    "mongoose": "^9.2.4"
+    "@apollo/server": "^4.11.3",
+    "@apollo/subgraph": "^2.10.0",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "graphql": "^16.10.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.2"
   },
-  "type": "commonjs"
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
